@@ -4,13 +4,11 @@ import { Server } from 'socket.io';
 import { createServer } from 'http'
 
 
-const PORT = 6000;
-
+const PORT = 6969;
 const app = express();
+
 app.use(express.json());
 app.use(cors());
-
-
 
 app.get('/',(req,res) => {
     res.send('Hello World')
